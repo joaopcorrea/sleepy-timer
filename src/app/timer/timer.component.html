@@ -1,3 +1,52 @@
-{{time}}
-<button (click)="handleClickStart()">Start</button>
-<button (click)="handleClickStop()">Stop</button>
+<section class="timer">
+  <div class="time-container">
+    <div class="container">
+      <button class="time-button more" 
+            (click)="handleClickMore('H')"
+            [class.hide]="isRunning"
+      ><img></button>
+      <span class="time">{{hours}}</span>
+      <button class="time-button less" 
+            (click)="handleClickLess('H')"
+            [class.hide]="isRunning"
+      ><img></button>
+    </div>
+    <p>:</p>
+    <div class="container">
+      <button class="time-button more" 
+            (click)="handleClickMore('M')"
+            [class.hide]="isRunning"
+      ><img></button>
+      <span class="time">{{minutes}}</span>
+      <button class="time-button less" 
+            (click)="handleClickLess('M')"
+            [class.hide]="isRunning"
+      ><img></button>
+    </div>
+    <p>:</p>
+    <div class="container">
+      <button class="time-button more" 
+            (click)="handleClickMore('S')"
+            [class.hide]="isRunning"
+      ><img></button>
+      <span class="time">{{seconds}}</span>
+      <button class="time-button less" 
+            (click)="handleClickLess('S')"
+            [class.hide]="isRunning"
+      ><img></button>
+    </div>
+  </div>
+  <div class="button-container">
+    <button class="reset-button" (click)="handleClickReset()">
+      <img src="../assets/img/reset.svg"/>
+    </button>
+    <button class="play-pause-button" (click)="handleClickPlayPause()">
+      <img src="../assets/img/play.svg"/>
+    </button>
+    <button class="stop-button" (click)="handleClickStop()">
+      <img src="../assets/img/stop.svg"/>
+    </button>
+  </div>
+  <!-- {{time}} -->
+
+</section>

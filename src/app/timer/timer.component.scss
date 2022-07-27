@@ -1,0 +1,144 @@
+.timer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1C1D21;
+  
+  font-family: 'JetBrains', monospace;
+  color: #FAFAFA;
+
+  .time-container {
+    display: flex;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .time {
+        font-size: 5em;
+      }
+
+      .time-button {
+        height: 1.5em;
+        width: 1.5em;
+        border-radius: 50%;
+        border: none;
+        color: #FAFAFA;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.hide {
+          visibility: hidden;
+        }
+      }
+
+      .more {
+        img {
+          height: 2em;
+          content:url('../../assets/img/more.svg');
+          filter: invert(37%) sepia(100%) saturate(6062%) hue-rotate(334deg) brightness(93%) contrast(102%);
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: #FAFAFA;
+        }
+      }
+
+      .less {
+        img {
+          height: 2em;
+          content:url('../../assets/img/less.svg');
+          filter: invert(37%) sepia(100%) saturate(6062%) hue-rotate(334deg) brightness(93%) contrast(102%);
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: #FAFAFA;
+        }
+      }
+    }
+
+    p {
+      font-size: 5em;
+      margin: auto 0;
+    }
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2em;
+    width: 15em;
+
+    .play-pause-button {
+      height: 4em;
+      width: 4em;
+      border-radius: 50%;
+      border: none;
+      background-color: #8818F0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        height: 3em;
+        filter: invert(97%) sepia(27%) saturate(22%) hue-rotate(168deg) brightness(112%) contrast(96%);
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .reset-button {
+      height: 3em;
+      width: 3em;
+      border-radius: 50%;
+      border: none;
+      background-color: #C52DFA;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        height: 2em;
+        filter: invert(75%) sepia(68%) saturate(5490%) hue-rotate(250deg) brightness(97%) contrast(79%);
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .stop-button {
+      height: 3em;
+      width: 3em;
+      border-radius: 50%;
+      border: none;
+      background-color: #C52DFA;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        height: 2em;
+        filter: invert(75%) sepia(68%) saturate(5490%) hue-rotate(250deg) brightness(97%) contrast(79%);
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
