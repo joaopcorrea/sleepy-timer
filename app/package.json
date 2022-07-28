@@ -1,6 +1,6 @@
 {
-  "name": "angular-electron",
-  "version": "11.0.0",
+  "name": "sleepy-timer",
+  "version": "0.0.0",
   "main": "main.js",
   "private": true,
   "dependencies": {}
