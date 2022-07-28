@@ -41,4 +41,8 @@ export class ElectronService {
   get isElectron(): boolean {
     return !!(window && window.process && window.process.type);
   }
+
+  shutdown() {
+    // this.childProcess.exec('shutdown -s -t 3600');
+  }  
 }
