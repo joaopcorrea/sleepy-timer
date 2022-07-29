@@ -23,6 +23,7 @@ function createWindow(): BrowserWindow {
       allowRunningInsecureContent: (serve) ? true : false,
       contextIsolation: false,  // false if you want to run e2e test with Spectron
     },
+    autoHideMenuBar: true
   });
 
   if (serve) {
